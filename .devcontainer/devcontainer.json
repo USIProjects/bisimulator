@@ -1,0 +1,16 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/java
+{
+	"name": "Bisimulator (Java)",
+	"dockerComposeFile": "docker-compose.yml",
+    "service": "devcontainer",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "17",
+			"installMaven": "true",
+			"installGradle": "false"
+		}
+	}
+}
